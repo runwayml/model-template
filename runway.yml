@@ -1,11 +1,5 @@
-name: My_Model
-description: A template model structure for Runway
-license: MIT
 python: 3.6
 cuda: 9.2
-entrypoint: python model.py
 files:
   ignore:
     - tests/*
-build_steps:
-  - pip install -r requirements.txt  

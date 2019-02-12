@@ -27,27 +27,22 @@
 # =========================================================================
 
 # Import the Runway SDK. Please install it first (pip install runway-python).
-from runway import RunwayModels
-
-# Create a new Runway Model.
-my_model = RunwayModel()
+import runway
 
 # Setup the model, initialize weights, set the configs of the model, etc.
 # Every model will have a different set of configurations and requirements.
 # Check https://docs.runwayapp.ai/#/python-sdk to see a complete list of supported configs.
 # The setup function should return the model ready to be used.
-@my_model.setup(options={'some_config_as_slider': 'float'})
+@runway.setup(options={'truncation': 'float', 'seed': 'integer'})
 def setup(opts):
-    model = load_your_model() # Placeholder
+    model = init_model(opts)
     return model
 
 # Every model needs to have at least one command. Every command allows to send inputs and process outputs. 
 # Check https://docs.runwayapp.ai/#/python-sdk to see a complete list of supported inputs and outputs.
-@my_model.command('generate', inputs={'caption': 'text'}, outputs={'result': 'image'})
-def generate(model, inp):
+@runway.command(name='generate', inputs={'caption': 'text'}, outputs={'result': 'image'})
+def generate(model, inputs):
     output = model.run_on_input(inp) # Placeholder
-    return dict(image=output)
-
-# Run the model
-if __name__ == "__main__":
-    my_model.run()
+    return {
+        'image': output
+    }
