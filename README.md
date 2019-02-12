@@ -2,7 +2,7 @@
 
 This repository contains a template structure to serve as a reference when porting machine learning models to [Runway](https://runwayapp.ai/). This references is written for python based models.
 
-> If you are looking for a tutorial on how to port your own model, see: [https://docs.runwayapp.ai/#/importing]
+> If you are looking for a tutorial on how to port your own model, see: [https://docs.runwayapp.ai/#/importing](https://docs.runwayapp.ai/#/importing)
 
 Every Runway model should have:
 - An **entrypoint** with the Runway specifications. In this case, [`model.py`](model.py).
