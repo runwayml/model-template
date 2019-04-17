@@ -19,7 +19,7 @@ The [`runway_model.py`](runway_model.py) entrypoint file is the file the Runway 
 
 ### Basic Structure
 
-Runway models expose a standard interface that allows the Runway app to interact with them over HTTP. This is accomplished using three functions: `@runway.setup()`, `@runway.command()`, and `runway.run()`.
+All Runway models expose a standard interface that allows the Runway desktop application to interact with them over HTTP. This is accomplished using three functions: `@runway.setup()`, `@runway.command()`, and `runway.run()`.
 
 ```python
 import runway
@@ -37,7 +37,7 @@ setup_options = {
 }
 @runway.setup(options=setup_options)
 def setup(opts):
-    msg = '[SETUP] Ran with options: seed = {}, truncation = {}'
+    msg = '[SETUP] Run with options: seed = {}, truncation = {}'
     print(msg.format(opts['seed'], opts['truncation']))
     model = ExampleModel(opts)
     return model
@@ -64,7 +64,7 @@ See the [`example_model.py`](example_model.py) file for the simple `ExampleModel
 
 ## The `runway.yml` Config File
 
-Each Runway model must have a [`runway.yml`](runway.yml) configuration file in its root directory. This file defines the steps needed to build and run your model for use with the Runway app. This file is written in YAML, a human-readable superset of JSON. Below is an example `runway.yml` file. This example file illustrates how you can provision your model’s environment.
+Each Runway model must have a [`runway.yml`](runway.yml) configuration file in its root directory. This file defines the steps needed to build and run your model for use with Runway. This file is written in YAML, a human-readable superset of JSON. Below is an example of a `runway.yml` file. This example file illustrates how you can provision your model’s environment.
 
 ```yaml
 version: 0.1
@@ -96,7 +96,7 @@ pip install -r requirements.txt
 python runway_model.py
 ```
 
-With a bit of luck you should see output similar to this, indicating your model is running.
+You should see an output similar to this, indicating your model is running.
 
 ```
 Setting up model...
