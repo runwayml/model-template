@@ -1,6 +1,6 @@
 # Template Structure for a Runway Model
 
-<img src="https://i.imgur.com/OWb3FhB.png" width=100/>
+<a href="http://sdk.runwayml.com" target="_blank"><img src="https://runway.nyc3.cdn.digitaloceanspaces.com/assets/github/runway-badge.png" width=100/></a>
 
 This repository contains a template structure to serve as a reference when porting machine learning models to [Runway](https://runwayapp.ai/). This references is written for python based models.
 
