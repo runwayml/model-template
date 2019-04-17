@@ -1,5 +1,7 @@
 # Runway Model Template
 
+<a href="http://sdk.runwayml.com" target="_blank"><img src="https://runway.nyc3.cdn.digitaloceanspaces.com/assets/github/runway-badge.png" width=100/></a>
+
 This repository contains an example model template that can be used as reference when porting machine learning models to [Runway](https://runwayml.com/). This template uses the Runway Model SDK Python module, check out the [module documentation](https://sdk.runwayml.com) for more info.
 
 <!-- Hiding this until that tutorial catches up...
