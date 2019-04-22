@@ -4,9 +4,7 @@
 
 This repository contains an example model template that can be used as reference when porting machine learning models to [Runway](https://runwayml.com/). This template uses the Runway Model SDK Python module, check out the [module documentation](https://sdk.runwayml.com) for more info.
 
-<!-- Hiding this until that tutorial catches up...
-> If you are looking for a tutorial on how to port your own model, see: [https://docs.runwayapp.ai/#/importing](https://docs.runwayapp.ai/#/importing)
--->
+> See the *Importing Models into Runway* [tutorial](https://docs.runwayapp.ai/#/importing) for a walk-through illustrating how to port a model to Runway.
 
 Each Runway model consists of two special files:
 
