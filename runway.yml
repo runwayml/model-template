@@ -9,7 +9,7 @@ entrypoint: python runway_model.py
 cuda: 9.2
 # Which ML framework would you like to pre-install? The appropriate GPU/CPU
 # versions of these libraries are selected automatically. Accepts values
-# "tensorflow" and "pytorch", installinv Tensorflow v1.12 and Pytorch v1.0
+# "tensorflow" and "pytorch", installing Tensorflow v1.12 and Pytorch v1.0
 # respectively.
 framework: tensorflow
 # Builds are created for CPU and GPU environments by default. You can use the
