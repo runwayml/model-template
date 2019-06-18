@@ -1,2 +1,2 @@
-runway-python==0.0.57
+runway-python==0.1.0
 Pillow==6.0.0
