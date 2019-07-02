@@ -46,8 +46,8 @@ from example_model import ExampleModel
 # supported configs. The setup function should return the model ready to be
 # used.
 setup_options = {
-    'truncation': number(min=5, max=100, step=1, default=10),
-    'seed': number(min=0, max=1000000)
+    'truncation': number(min=1, max=10, step=1, default=5, description='Example input.'),
+    'seed': number(min=0, max=1000000, description='A seed used to initialize the model.')
 }
 @runway.setup(options=setup_options)
 def setup(opts):
@@ -61,7 +61,8 @@ def setup(opts):
 # outputs data types: https://sdk.runwayml.com/en/latest/data_types.html
 @runway.command(name='generate',
                 inputs={ 'caption': text() },
-                outputs={ 'image': image(width=512, height=512) })
+                outputs={ 'image': image(width=512, height=512) },
+                description='Generates a red square when the input text input is "red".')
 def generate(model, args):
     print('[GENERATE] Ran with caption value "{}"'.format(args['caption']))
     # Generate a PIL or Numpy image based on the input caption, and return it
