@@ -46,7 +46,7 @@ from example_model import ExampleModel
 # supported configs. The setup function should return the model ready to be
 # used.
 setup_options = {
-    'truncation': number(min=5, max=10, step=1, default=1, description='Example input.'),
+    'truncation': number(min=1, max=10, step=1, default=5, description='Example input.'),
     'seed': number(min=0, max=1000000, description='A seed used to initialize the model.')
 }
 @runway.setup(options=setup_options)
