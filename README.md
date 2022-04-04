@@ -1,5 +1,7 @@
 # Runway Model Template
 
+> DEPRECATION NOTICE: This repository has been deprecated. The functionality described below has been sunset and models can no longer be ported to Runway at this time.
+
 [![RunwayML Badge](https://open-app.runwayml.com/gh-badge.svg)](https://open-app.runwayml.com/)
 
 This repository contains an example model template that can be used as reference when porting machine learning models to [Runway](https://runwayml.com/). This template uses the Runway Model SDK Python module, check out the [module documentation](https://sdk.runwayml.com) for more info.
